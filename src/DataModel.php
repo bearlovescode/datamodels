@@ -35,13 +35,13 @@
          * @param mixed $v
          * @return void
          */
-        protected function setProperty(string $k, mixed $v): void
+        public function setProperty(string $k, mixed $v): void
         {
             if (property_exists($this, $k))
                 $this->$k = $v;
         }
 
-        protected function toArray() : array
+        public function toArray() : array
         {
             $a = [];
             $props = get_object_vars($this);
