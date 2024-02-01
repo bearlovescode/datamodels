@@ -46,8 +46,8 @@
             $a = [];
             $props = get_object_vars($this);
 
-            foreach ($props as $prop)
-                $a[$prop] = $this->{$prop};
+            foreach ($props as $k => $v)
+                $a[$k] = $this->{$k};
 
             return $a;
         }
