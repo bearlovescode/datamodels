@@ -10,4 +10,9 @@
            if ($tokenValue)
                $this->value = $tokenValue;
        }
+
+       public function __toString(): string
+       {
+           return $this->value;
+       }
     }
