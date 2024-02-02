@@ -9,6 +9,11 @@
                 $this->hydrate($data);
         }
 
+        public function __serialize(): array
+        {
+            return $this->toArray();
+        }
+
         protected function hydrate(mixed $data): void
         {
             if (is_array($data))
