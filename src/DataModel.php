@@ -56,4 +56,9 @@
 
             return $a;
         }
+
+        public function setDataSchema(array $schema = []): void
+        {
+            $this->data = array_merge($this->data, $schema);
+        }
     }
